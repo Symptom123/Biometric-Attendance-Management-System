@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Biometric Attendance Management System — Secure, real-time fingerprint-based attendance tracking with role-based dashboards for Admin, Teacher, Student, and Parent.">
+  <meta name="theme-color" content="#060914">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BAMS — Biometric Attendance Management System">
+  <meta property="og:description" content="Fingerprint-based attendance tracking with real-time dashboards.">
+
+  <title>BAMS — Biometric Attendance Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ══ DYNAMIC GRADIENT BACKGROUND ══════════════════════════ -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+  </div>
+
+  <!-- ══ MAIN APP SHELL ════════════════════════════════════════ -->
+  <div id="app">
+
+    <!-- ── TOP NAVIGATION BAR ──────────────────────────────── -->
+    <header class="topbar" role="banner">
+      <div class="topbar-brand">
+        <div class="topbar-logo" aria-hidden="true">🔐</div>
+        <div>
+          <div class="topbar-title">BAMS</div>
+          <div class="topbar-sub">Biometric Attendance System</div>
+        </div>
+      </div>
+
+      <!-- Role Switcher -->
+      <nav class="role-switcher" id="role-switcher" role="navigation" aria-label="Role view switcher">
+        <!-- Injected by JS -->
+      </nav>
+
+      <!-- Live Clock -->
+      <div class="topbar-time" id="topbar-clock" aria-live="polite">--:--:--</div>
+    </header>
+
+    <!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+    <main id="main-content" role="main" aria-label="Dashboard content">
+      <!-- Injected by router -->
+      <div class="empty-state">
+        <div class="spinner"></div>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- ══ TOAST NOTIFICATION CONTAINER ═════════════════════════ -->
+  <div id="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ══ SCRIPTS ═══════════════════════════════════════════════ -->
+  <script type="module" src="app.js"></script>
+
+  <!-- Fallback for non-module browsers -->
+  <noscript>
+    <div style="
+      position:fixed;inset:0;background:#060914;color:white;
+      display:flex;align-items:center;justify-content:center;
+      font-family:sans-serif;font-size:16px;text-align:center;padding:20px">
+      <div>
+        <div style="font-size:48px;margin-bottom:16px">🔐</div>
+        <h1>JavaScript Required</h1>
+        <p style="color:#94a3b8;margin-top:8px">Please enable JavaScript to use the Biometric Attendance Management System.</p>
+      </div>
+    </div>
+  </noscript>
+
+</body>
+</html>
