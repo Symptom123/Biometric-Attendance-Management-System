@@ -2,7 +2,8 @@
   "experimentalServices": {
     "web": {
       "entrypoint": ".",
-      "routePrefix": "/"
+      "routePrefix": "/",
+      "framework": null
     }
   }
 }
