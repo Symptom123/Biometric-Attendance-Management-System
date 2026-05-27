@@ -1,7 +1,8 @@
 {
   "experimentalServices": {
     "web": {
-      "entrypoint": "."
+      "entrypoint": ".",
+      "routePrefix": "/"
     }
   }
 }
