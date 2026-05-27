@@ -1,8 +1,7 @@
 {
-  "experimentalServices": [
-    {
-      "name": "bams-app",
+  "experimentalServices": {
+    "bams-app": {
       "src": "."
     }
-  ]
+  }
 }
