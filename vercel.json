@@ -1,8 +1,9 @@
 {
   "experimentalServices": {
     "web": {
-      "entrypoint": "index.html",
-      "routePrefix": "/"
+      "entrypoint": ".",
+      "routePrefix": "/",
+      "builder": "@vercel/static"
     },
     "api": {
       "entrypoint": "api/index.js",
