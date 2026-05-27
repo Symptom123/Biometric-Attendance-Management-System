@@ -3,12 +3,12 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import dotenv from 'dotenv';
-import authRoutes from './routes/auth.js';
-import userRoutes from './routes/users.js';
-import fingerprintRoutes from './routes/fingerprint.js';
-import attendanceRoutes from './routes/attendance.js';
-import reportRoutes from './routes/reports.js';
-import { initDatabase } from './scripts/initDb.js';
+import authRoutes from './src/routes/auth.js';
+import userRoutes from './src/routes/users.js';
+import fingerprintRoutes from './src/routes/fingerprint.js';
+import attendanceRoutes from './src/routes/attendance.js';
+import reportRoutes from './src/routes/reports.js';
+import { initDatabase } from './src/scripts/initDb.js';
 
 dotenv.config();
 
