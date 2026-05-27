@@ -1,7 +1,7 @@
 {
   "experimentalServices": {
-    "bams-app": {
-      "src": "."
+    "web": {
+      "entrypoint": "."
     }
   }
 }
